@@ -1,6 +1,7 @@
 from tkinter import *
 import math
 reps = 0
+
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -11,6 +12,7 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 my_timer = None
+
 # ---------------------------- TIMER RESET ------------------------------- # 
 def reset_timer():
     window.after_cancel(my_timer)
@@ -60,6 +62,7 @@ def count_down(count):
         for _ in range(work_sessions):
             marks += "✔"
         checks.config(text=marks)
+        
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Pomodoro")
